@@ -1,0 +1,417 @@
+---- author:liangxs ---- date:20200520 --- for：大屏报表增加本地接口,添加全国物流地图组件 -------
+.svnignore
+docs/*(+)
+src/api/visual.js
+public/cdn/avue/avue.min.js
+src/config.js
+src/main.js
+src/mixins/index.js
+src/page/build.vue
+src/page/group/container.vue
+src/page/group/subgroup.vue
+src/page/group/top.vue
+src/page/list/category.vue
+src/page/list/index.vue
+src/page/list/map.vue
+src/utils/utils.js
+---- author:liangxs ---- date:20200520 --- for：大屏报表增加本地接口,添加全国物流地图组件 -------
+
+---- author:liangxs ---- date:20200520 --- for：添加全国物流地图组件 -------
+src/components/coolrdMap/*(+) 自定义地图组件
+src/components/index.js
+src/option/base.js
+src/option/components/coolrdMap.vue
+src/option/components/img.vue
+src/option/components.js
+src/option/config.js
+---- author:liangxs ---- date:20200520 --- for：添加全国物流地图组件 -------
+
+---- author:liangxs ---- date:20200522 --- for：接口请求是否需要token校验,加入404页面 -------
+src/api/visual.js
+src/config.js
+src/main.js
+src/option/base.js
+src/page/404.vue(+)
+src/styles/notFound.css(+)
+src/page/group/container.vue
+src/page/group/top.vue
+src/page/list/index.vue
+src/router.js
+vue.config.js
+/public/index.html
+---- author:liangxs ---- date:20200522 --- for：接口请求是否需要token校验,加入404页面 -------
+
+---- author:liangxs ---- date:20200525 --- for：合并之前图表加入的自定义配置  图表图例宽度配置、加入单击链接、散点图气泡大小 -------
+public/cdn/avue/avue.min.js
+src/option/base.js
+src/option/components/bar.vue
+src/option/components/pie.vue
+src/option/components/scatter.vue
+src/option/config.js
+---- author:liangxs ---- date:20200525 --- for：合并之前图表加入的自定义配置 图表图例宽度配置、加入单击链接、散点图气泡大小 -------
+
+---- author:lilin ---- date:20200529 --- for：合并之前折柱图，滑动组件，城市派件地图，地理坐标图，键盘移动、删除，轮播图，翻牌器，进度条，选项卡，图层层次bug -------
+public\cdn\avue\avue.min.js
+public\const\theme\halloween.project.js
+src\components\index.js
+src\main.js
+src\components\coolrdMap\index.vue
+src\components\terminal\index.vue
+src\mixins\index.js
+src\option\base.js
+src\option\components.js
+src\option\config.js
+src\option\components\bar.vue
+src\option\components\common.vue
+src\option\components\coolrdMap.vue
+src\option\components\flop.vue
+src\option\components\gauge.vue
+src\option\components\img.vue
+src\option\components\swiper.vue
+src\option\components\tabs.vue
+src\page\build.vue
+src\page\group\container.vue
+src\page\group\contentmenu.vue
+src\page\group\subgroup.vue
+src\theme\halloween.project.js
+---- author:lilin ---- date:20200529 --- for：合并之前折柱图，滑动组件，城市派件地图，地理坐标图，键盘移动、删除，轮播图，翻牌器，进度条，选项卡，图层层次bug -------
+
+---- author:lilin ---- date:20200529 --- for：合并之前折柱图，滑动组件，城市派件地图，地理坐标图，键盘移动、删除，轮播图，翻牌器，进度条，选项卡，图层层次bug -------
+public\img\source\zhonghecompany(+)
+src\components\markMap(+)
+src\components\slippage(+)
+src\components\virualMap(+)
+src\option\components\markMap.vue(+)
+src\option\components\slippage.vue
+src\option\components\terminal.vue
+src\option\components\virualMap.vue
+---- author:lilin ---- date:20200529 --- for：合并之前折柱图，滑动组件，城市派件地图，地理坐标图，键盘移动、删除，轮播图，翻牌器，进度条，选项卡，图层层次bug -------
+
+---- author:lilin ---- date:20200529 --- for：合并表格，预览样式-------
+src\mixins\index.js
+src\option\base.js
+src\option\components\table.vue
+src\page\group\container.vue
+src\page\group\contentmenu.vue
+src\page\group\subgroup.vue
+src\styles\common.scss
+---- author:lilin ---- date:20200529 --- for：合并表格，预览样式-------
+
+---- author:liangxs ---- date:20200531 --- for：使用hash模式路由,图片路径使用./img -------
+docs/db修改日志.sql(D)
+docs/数据初始化.sql
+public/cdn/avue/avue.min.js
+src/api/visual.js
+src/option/base.js
+src/option/components/img.vue
+src/option/config.js
+src/page/build.vue
+src/page/group/container.vue
+src/page/group/top.vue
+src/page/list/index.vue
+src/router.js
+src/styles/list.scss
+src/utils/utils.js
+vue.config.js
+---- author:liangxs ---- date:20200531 --- for：使用hash模式路由-------
+
+---- author:lilin ---- date:20200602 --- for：修改翻牌器对齐方式，去掉文本框行高，滑动组件加接口，去掉时间组件重复代码，修改进度条字体设置-------
+src\components\virualMap\index.vue
+src\mixins\index.js
+src\option\base.js
+src\option\components\datetime.vue
+src\option\components\flop.vue
+src\option\components\progress.vue
+ src\option\components\text.vue
+ ---- author:lilin ---- date:20200602 --- for：修改翻牌器对齐方式，去掉文本框行高，滑动组件加接口，去掉时间组件重复代码，修改进度条字体设置-------
+
+ ---- author:liangxs ---- date:20200602 --- for：图表加入图例颜色，图表字体给默认值
+public/cdn/avue/index.css
+public/cdn/avue/avue.min.js
+public/index.html
+src/components/terminal/index.vue
+src/option/base.js
+src/option/components/common.vue
+src/option/config.js
+src/page/build.vue
+src/page/group/imglist.vue
+src/page/group/layer.vue
+src/page/index.vue
+src/page/list/index.vue
+---- author:liangxs ---- date:20200602 --- for：图表加入图例颜色，图表字体给默认值
+
+---- author:lilin ---- date:20200604 --- for：文字，视频，地图加数据接口，修复表格位置bug,修复选项卡背景，修复翻牌器位置，修复view页面蒙层
+src\option\base.js
+src\option\components\flop.vue
+src\option\components\table.vue
+src\option\components\tabs.vue
+src\option\config.js
+src\page\build.vue
+src\page\view.vue
+---- author:lilin ---- date:20200604 --- for：文字，视频，地图加数据接口，修复表格位置bug,修复选项卡背景，修复翻牌器位置，修复view页面蒙层
+
+---- author:liangxs ---- date:20200604 --- for：加入删除保护码提示
+public/cdn/avue/avue.min.js
+public/cdn/avue/index.css
+src/option/base.js
+src/option/components/bar.vue
+src/page/group/layer.vue
+src/page/list/index.vue
+---- author:liangxs ---- date:20200604 --- for：加入删除保护码提示
+
+---- author:liangxs ---- date:20200605 --- for：去掉饼图字体大小,图片上传加入token
+src/option/base.js
+src/option/components/pie.vue
+src/page/group/container.vue
+src/page/group/imglist.vue
+---- author:liangxs ---- date:20200605 --- for：去掉饼图字体大小,图片上传加入token
+
+---- author:lilin ---- date:20200610 --- for：折柱图接口设置
+src/components/markMap/index.vue
+src/components/terminal/index.vue
+src/option/base.js
+src/option/components/line.vue
+src/option/components/terminal.vue
+---- author:lilin ---- date:20200610 --- for：折柱图接口设置
+
+---- author:lilin ---- date:20200610 --- 翻牌器背景图片修改
+src\option\components\flop.vue
+src\option\base.js
+---- author:lilin ---- date:20200610 --- 翻牌器背景图片修改
+
+---- author:liangxs ---- date:20200610 --- 判断线上接口和本地接口，自定义组件加上updateData方法
+public/cdn/avue/avue.min.js
+public/index.html
+src/api/category.js
+src/api/map.js
+src/api/visual.js
+src/components/coolrdMap/index.vue
+src/components/markMap/index.vue
+src/components/terminal/index.vue
+src/components/virualMap/index.vue
+src/config.js
+src/option/components/common.vue
+src/page/group/container.vue
+src/page/list/index.vue
+---- author:liangxs ---- date:20200610 --- 判断线上接口和本地接口，自定义组件加上updateData方法
+
+---- author:liangxs ---- date:20200616 --- 加入通用图表组件,token过期跳转到登录页面,本地数据缓存
+public/cdn/avue/avue.min.js
+src/api/visual.js
+src/components/terminal/index.vue
+src/config.js
+src/main.js
+src/option/base.js
+src/option/components/common.vue
+src/option/components/commonChart.vue(+)
+src/option/components/funnel.vue
+src/option/components/gauge.vue
+src/option/components/pictorialbar.vue
+src/option/components.js
+src/option/config.js
+src/page/build.vue
+src/page/group/container.vue
+src/page/group/top.vue
+src/page/list/index.vue
+---- author:liangxs ---- date:20200616 --- 加入通用图表组件,token过期跳转到登录页面,本地数据缓存
+
+---- author:lilin ---- date:20200619 --- 图片、图片框、象形图增加图片删除，新增大屏放入其他库
+src/page/build.vue
+src/page/list/index.vue
+src/option/components/img.vue
+src/option/components/imgborder.vue
+src/option/components/pictorialbar.vue
+---- author:lilin ---- 20200619 --- 图片、图片框、象形图、大屏背景增加图片删除，新增大屏放入其他库
+
+---- author:liangxs ---- date:20200619 --- 本地数据缓存，通用图表加入动态配置
+src/config.js
+src/option/base.js
+src/option/components/common.vue
+src/option/components/commonChart.vue
+src/option/config.js
+src/page/build.vue
+src/page/group/container.vue
+src/page/group/top.vue
+---- author:liangxs ---- date:20200619 --- 本地数据缓存，通用图表加入动态配置
+
+-- author:liangxs--------date:20200622  解决地图组件token失效问题
+src/page/group/container.vue
+-- author:liangxs--------date:20200622  解决地图组件token失效问题
+
+---- author:lilin ---- 20200623 --- 图片透明度，圆角，背景色设置，饼图增加最小角度，增加数值、百分比开关，字符云设置相同字体大小开关，选项卡背景增加删除
+src/option/base.js
+src/option/components/common.vue
+src/option/components/img.vue
+src/option/components/pie.vue
+src/option/components/tabs.vue
+src/option/components/wordcloud.vue
+---- author:lilin ---- 20200623 --- 图片透明度，圆角，背景色设置，饼图增加最小角度，增加数值、百分比开关，字符云设置相同字体大小开关，选项卡背景增加删除
+
+---- author:lilin ---- 20200630 --- 更改万能组件和本地数据保存图标,修改折柱图网格线，增加图片上传提示，增加象形图数值数值及轴线设置
+src/option/config.js
+src/page/build.vue
+src/page/group/imglist.vue
+src/components/terminal/index.vue
+src/option/base.js
+src/option/components/pictorialbar.vue
+---- author:lilin ---- 20200630 --- 更改万能组件和本地数据保存图标,修改折柱图网格线，增加图片上传提示，增加象形图数值数值及轴线设置
+
+---- author:lilin ---- 20200701 --- 修改图片上传提示
+src/page/group/imglist.vue
+src/page/build.vue
+---- author:lilin ---- 20200701 --- 修改图片上传提示
+
+---- author:lilin ---- 20200701 --- 修改预览右击屏蔽，修改预览样式，修改折柱图y轴间隔
+src/page/view.vue
+src/page/group/subgroup.vue
+src/components/terminal/index.vue
+src/page/build.vue
+src/option/components/pie.vue
+src/option/components/img.vue
+---- author:lilin ---- 20200701 --- 修改预览右击屏蔽，修改预览样式，修改折柱图y轴间隔
+
+---- author:liangxs ---- 20200728 --- 解决之前报表地图加载不出来问题
+src/page/group/container.vue
+---- author:liangxs ---- 20200728 --- 解决之前报表地图加载不出来问题
+
+---- author:scott ---- 20200810 --- 修改标题title
+public\index.html
+src\page\index.vue
+---- author:scott ---- 20200810 --- 修改标题title
+
+---- author:scott ---- 20200810 --- token失效跳转登录页面，做成灵活配置的
+src\main.js
+public\index.html
+---- author:scott ---- 20200810 --- token失效跳转登录页面，做成灵活配置的
+
+---- author:liangxs ---- 20200814--- html2canvas,mock,swiper使用本地js，打包时不用文件hash
+public/cdn/html2canvas(+)
+public/cdn/mock(+)
+public/cdn/swiper(+)
+public/index.html
+vue.config.js
+---- author:liangxs ---- 20200814--- html2canvas,mock,swiper使用本地js，打包时不用文件hash
+
+---- author:liusq ---- 20200820 --- 保存图标
+src\page\group\top.vue
+---- author:liusq ---- 20200820 --- 保存图标
+
+---- author:liusq ---- 20200820 --- title设置
+src\page\view.vue
+src\page\list\index.vue
+src\page\build.vue
+---- author:liusq ---- 20200820 --- title设置
+
+---- author:liusq ---- 20200820 --- 保存去封面图修改
+src\page\group\top.vue
+---- author:liusq ---- 20200820 --- 保存去封面图修改
+
+---- author:liusq ---- 20200820 --- index.html页面还原
+public\index.html
+---- author:liusq ---- 20200820 --- index.html页面还原
+
+---- author:scott ---- 20200820 --- title为空逻辑处理,防止出现null情况
+src\page\build.vue
+---- author:scott ---- 20200820 --- title为空逻辑处理,防止出现null情况
+
+---- author:liusq ---- 20200820 --- 保存图标
+src\page\group\top.vue
+---- author:liusq ---- 20200820 --- 保存图标
+
+---- author:liusq ---- 20200820 --- title设置
+src\page\view.vue
+src\page\list\index.vue
+src\page\build.vue
+---- author:liusq ---- 20200820 --- title设置
+
+---- author:liusq ---- 20200820 --- 保存去封面图修改
+src\page\group\top.vue
+---- author:liusq ---- 20200820 --- 保存去封面图修改
+
+---- author:liusq ---- 20200820 --- index.html页面还原
+public\index.html
+---- author:liusq ---- 20200820 --- index.html页面还原
+
+---- author:liusq ---- 20200820 --- 背景图片上传
+src\page\build.vue
+---- author:liusq ---- 20200820 --- 背景图片上传
+
+---- author:liusq ---- 20200820 --- 编辑、新增、删除提示修改
+src\page\list\category.vue
+src\page\list\map.vue
+---- author:liusq ---- 20200820 --- 编辑、新增、删除提示修改
+
+---- author:liusq ---- 20200820 --- 柱形图背景不支持注释掉
+src\option\components\common.vue
+---- author:liusq ---- 20200820 --- 柱形图背景不支持注释掉
+
+---- author:liusq ---- 20200820 --- 密码提示修改
+src\page\group\container.vue
+---- author:liusq ---- 20200820 --- 密码提示修改
+
+---- author:liusq ---- 20200820 --- 模板按钮权限
+src\page\list\index.vue
+---- author:liusq ---- 20200820 --- 模板按钮权限
+
+---- author:liusq ---- 20200820 --- 失效关闭大屏
+src\main.js
+---- author:liusq ---- 20200820 --- 失效关闭大屏
+
+---- author:liusq ---- 20200820 --- 路由传参设置
+src\router.js
+---- author:liusq ---- 20200820 --- 路由传参设置
+
+---- author:liusq ---- 20200820 --- 增加getHashString方法
+src\utils\utils.js
+---- author:liusq ---- 20200820 --- 增加getHashString方法
+
+---- author:liusq ---- 20200820 --- 增加jsonwebtoken依赖
+package.json
+---- author:liusq ---- 20200820 --- 增加jsonwebtoken依赖
+
+---- author:liusq ---- 20200821 --- 保存后预览
+src\page\group\top.vue
+---- author:liusq ---- 20200821 --- 保存后预览
+
+---- author:liusq ---- 20200821 --- 路由参数去掉
+src\page\group\top.vue
+src\router.js
+src\page\list\index.vue
+src\page\group\container.vue
+---- author:liusq ---- 20200821 --- 路由参数去掉
+
+---- author:liusq ---- 20200821 --- 分类、地图按钮权限
+src\page\list\category.vue
+src\page\list\map.vue
+---- author:liusq ---- 20200821 --- 分类、地图按钮权限
+
+---- author:liusq ---- 20200826 K线图--- 
+src\option\config.js
+src\option\components.js
+src\option\base.js
+src\option\components\candlestick.vue
+---- author:liusq ---- 20200826 K线图--- 
+
+---- author:liusq ---- 20200826 下拉类别过滤--- 
+src\page\list\index.vue
+---- author:liusq ---- 20200826 下拉类别过滤--- 
+
+---- author:liusq ---- 20200826 背景颜色设置--- 
+src\page\group\container.vue
+---- author:liusq ---- 20200826 背景颜色设置--- 
+
+---- author:liusq ---- 20200828 展开设置--- 
+src\page\group\top.vue
+src\page\build.vue
+---- author:liusq ---- 20200828 展开设置--- 
+
+---- author:liusq ---- 20200828 增加图标样式--- 
+public\index.html
+src\option\base.js
+src\page\group\top.vue
+---- author:liusq ---- 20200828 增加图标样式--- 
+
+---- author:liusq ---- 20200828 初始化加载样式和增加token判断条件--- 
+src\page\index.vue
+src\main.js
+---- author:liusq ---- 20200828 初始化加载样式和增加token判断条件--- 
